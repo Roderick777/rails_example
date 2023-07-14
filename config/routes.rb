@@ -9,6 +9,13 @@ Rails.application.routes.draw do
 
   resources :article
 
-  resources :user
+  resources :user do
+    collection do
+      post 'signin'
+      post 'login'
+    end
+  end
+
+  resources :profile
 
 end
