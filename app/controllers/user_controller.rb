@@ -18,9 +18,11 @@ class UserController < ApplicationController
   def destroy
   end
 
-  def signin
+  def signup
+  
   end
 
   def login
+    
   end
 end
