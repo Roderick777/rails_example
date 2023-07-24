@@ -55,7 +55,6 @@ class ProfileController < ApplicationController
         "name": "Angular",
         "icon": "angular"
       },
-
       {
         "id": 8,
         "name": "Git flow",
@@ -68,10 +67,14 @@ class ProfileController < ApplicationController
       },
       {
         "id": 10,
+        "name": "Python",
+        "icon": "python"
+      },
+      {
+        "id": 11,
         "name": "Bases de datos",
         "icon": "database"
       },
-
     ]
   end
 end
