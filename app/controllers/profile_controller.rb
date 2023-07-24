@@ -19,7 +19,7 @@ class ProfileController < ApplicationController
   end
 
   def technologies
-    render json: [
+    data_list = [
       {
         "id": 1,
         "name": "JavaScript",
@@ -76,5 +76,8 @@ class ProfileController < ApplicationController
         "icon": "database"
       },
     ]
+    render json: {
+      "list": data_list 
+    }
   end
 end
