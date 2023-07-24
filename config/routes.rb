@@ -16,6 +16,10 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :profile
+  resources :profile do
+    collection do
+      get 'technologies'
+    end
+  end
 
 end
