@@ -23,6 +23,9 @@ class UserController < ApplicationController
   end
 
   def login
+    @user = User.where(email: params[:email], password: params[:password])
+    render json: @user[0] if @user.size.positive? 
     
+    render json: { "error": "Error" }
   end
 end
