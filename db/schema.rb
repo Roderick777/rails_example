@@ -10,13 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_06_003209) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_08_034304) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "timescaledb"
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.integer "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "places", force: :cascade do |t|
+    t.text "description"
+    t.float "lat"
+    t.float "lng"
+    t.integer "zoom"
+    t.string "image"
+    t.string "title"
+    t.string "country"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
