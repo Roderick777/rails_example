@@ -1,4 +1,4 @@
-class PlacesController < ApplicationController
+class PlaceController < ApplicationController
   def index
     render json: Place.all  
   end
