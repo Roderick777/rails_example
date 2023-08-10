@@ -5,6 +5,6 @@ class PlaceController < ApplicationController
 
   def create
     @place = Place.create(params[:place])
-    render json: @place  
+    render json: { "place": @place }  
   end
 end
