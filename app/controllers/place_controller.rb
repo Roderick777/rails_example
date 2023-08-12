@@ -1,6 +1,6 @@
 class PlaceController < ApplicationController
   def index
-    render json: Place.all  
+    render json: { "place": Place.all }  
   end
 
   def create
