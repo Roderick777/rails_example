@@ -23,5 +23,6 @@ Rails.application.routes.draw do
   end
 
   resources :place
+  resources :openai
 
 end
