@@ -29,6 +29,8 @@ gem "jbuilder"
 
 gem "ruby-openai"
 
+gem "byebug"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

@@ -1,11 +1,8 @@
-require "openai"
-
 class QuestionService
-  def initialize(question)
-    @question = question
+  def initialize
   end
-
-  def perform
+  
+  def perform(question)
     client = OpenAI::Client.new(access_token: "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")
     response = client.chat(
       parameters: {
