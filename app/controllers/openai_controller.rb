@@ -5,4 +5,9 @@ class OpenaiController < ApplicationController
     service = QuestionService.new(params[:question] ||  "Hola!" )
     render json: { "response": service.perform }  
   end
+
+  def create
+    service = QuestionService.new(params[:question] ||  "Hola!" )
+    render json: { "response": service.perform }  
+  end
 end
