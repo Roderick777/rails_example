@@ -2,7 +2,7 @@ require "openai"
 
 class OpenaiController < ApplicationController
   def index
-    client = OpenAI::Client.new(access_token: "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")
+    client = OpenAI::Client.new(access_token: "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")
     response = client.chat(
       parameters: {
           model: "gpt-3.5-turbo", # Required.
