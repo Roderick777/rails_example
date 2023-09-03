@@ -3,7 +3,7 @@ class QuestionService
   end
   
   def perform(question)
-    client = OpenAI::Client.new(access_token: "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")
+    client = OpenAI::Client.new(access_token: ENV("OPENAI_KEY"))
     response = client.chat(
       parameters: {
           model: "gpt-3.5-turbo", # Required.
